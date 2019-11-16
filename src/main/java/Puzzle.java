@@ -42,6 +42,7 @@ public class Puzzle {
                 long endTime3 = System.nanoTime();
                 long totalTimeTaken3 = endTime3 - startTime3;
                 backTrackingCount = backTracking.getBackTrackingCount();
+            System.out.println("bbcount"+backTrackingCount);
                 gridValues = backTracking.getBoard();
                 backTracking.consoleDisplay();
                 long endTime = System.nanoTime();
