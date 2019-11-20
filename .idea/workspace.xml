@@ -8,15 +8,10 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Input/Puzzle-4x4-0001.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Input/Puzzle-4x4-0001.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/test/BackTrackingTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/BackTrackingTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/o.txt" beforeDir="false" afterPath="$PROJECT_DIR$/o.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Puzzle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Puzzle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Solver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Solver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/BackTrackingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BackTrackingTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/HumanKindTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HumanKindTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -90,15 +85,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.BackTrackingTest">
-    <configuration name="Puzzle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Puzzle" />
-      <module name="untitled.main" />
-      <option name="PROGRAM_PARAMETERS" value="input.txt o.txt" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Gradle.Tests in 'untitled.test'">
     <configuration name="BackTrackingTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -119,12 +106,72 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="BackTrackingTest.backTrackingTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="HumanKindTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;BackTrackingTest.backTrackingTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;HumanKindTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="HumanKindTest.humanKindTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;HumanKindTest.humanKindTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="OnePossibleTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;OnePossibleTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Tests in 'untitled.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests *" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -140,17 +187,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.Puzzle" />
-      <item itemvalue="Gradle.BackTrackingTest.backTrackingTest" />
       <item itemvalue="Gradle.BackTrackingTest" />
+      <item itemvalue="Gradle.HumanKindTest" />
+      <item itemvalue="Gradle.HumanKindTest.humanKindTest" />
+      <item itemvalue="Gradle.OnePossibleTest" />
+      <item itemvalue="Gradle.Tests in 'untitled.test'" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Tests in 'untitled.test'" />
+        <item itemvalue="Gradle.OnePossibleTest" />
+        <item itemvalue="Gradle.HumanKindTest.humanKindTest" />
+        <item itemvalue="Gradle.HumanKindTest" />
         <item itemvalue="Gradle.BackTrackingTest" />
-        <item itemvalue="Gradle.BackTrackingTest.backTrackingTest" />
-        <item itemvalue="Gradle.BackTrackingTest.backTrackingTest" />
-        <item itemvalue="Gradle.BackTrackingTest.backTrackingTest" />
-        <item itemvalue="Application.Puzzle" />
       </list>
     </recent_temporary>
   </component>
@@ -165,7 +214,7 @@
       <option name="presentableId" value="Default" />
       <updated>1573761202152</updated>
       <workItem from="1573761207408" duration="24696000" />
-      <workItem from="1574215507992" duration="2573000" />
+      <workItem from="1574215507992" duration="3357000" />
     </task>
     <servers />
   </component>
