@@ -8,14 +8,12 @@ public class BackTrackingTest {
 
     @Test
     public void  backTrackingTest() throws IOException {
-        Solver sudokuContent = new Solver("input\\Puzzle-9x9-0101.txt");
+        Solver sudokuContent = new Solver("input\\Puzzle-4x4-0001.txt","output.txt");
         String gridValues[][]=sudokuContent.getGridValues();
         BackTracking backTracking= new BackTracking(gridValues);
         assertEquals(backTracking.getSize(),gridValues[0].length);
         backTracking.solve();
-        assertEquals(backTracking.getBackTrackingCount(),206);
-
-
+        assertEquals(backTracking.getBackTrackingCount(),4);
     }
 
 }

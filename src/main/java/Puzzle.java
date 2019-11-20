@@ -7,7 +7,12 @@ public class Puzzle {
             System.out.println("Type a valid command line argument accordingly:"+"\n"+ "<input file name> ->  reads puzzle from the specified input file and writes the output to the console"+"\n"+
                     "<input file name> <output file name> ->  reads puzzle from the specified input file and writes the output the specify output file");
         }else{
-            Solver solver = new Solver(args[0]);
+
+            String resultFile=null;
+            if(args.length==2){
+                resultFile=args[1];
+            }
+            Solver solver = new Solver(args[0],resultFile);
             String puzzleArray[][] = solver.getGridValues();
             String gridValues[][] = solver.getGridValues();
             int humanKindCount=0;
@@ -42,7 +47,6 @@ public class Puzzle {
                 long endTime3 = System.nanoTime();
                 long totalTimeTaken3 = endTime3 - startTime3;
                 backTrackingCount = backTracking.getBackTrackingCount();
-            System.out.println("bbcount"+backTrackingCount);
                 gridValues = backTracking.getBoard();
                 backTracking.consoleDisplay();
                 long endTime = System.nanoTime();

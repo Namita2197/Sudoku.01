@@ -7,39 +7,52 @@ public class Solver {
     private String[][] gridValues;
     private int gridSize;
     private String gridSymbols[];
+    private File puzzleInputFile;
+    private File puzzleOutputFile;
 
-    public Solver(String puzzleInputFile) throws IOException {
 
-            FileReader fileReader = new FileReader(puzzleInputFile);
-            BufferedReader bufferedReader = new BufferedReader(fileReader);
-            this.gridSize = Integer.valueOf(bufferedReader.readLine());
+    public Solver(String puzzleInput, String resultFile) throws IOException {
+        puzzleInputFile = new  File(puzzleInput);
+        if(resultFile!=null){
+            puzzleOutputFile= new File(resultFile);
+        }
+        FileIO();
+    }
 
-            BufferedReader bufferedReader1 = new BufferedReader(new FileReader(puzzleInputFile));
-            int rows=0;
-            while(bufferedReader1.readLine()!=null) {
-                rows++;
+    public void FileIO() throws IOException {
+        FileReader fileReader = new FileReader(puzzleInputFile);
+        BufferedReader bufferedReader = new BufferedReader(fileReader);
+        this.gridSize = Integer.valueOf(bufferedReader.readLine());
+
+        BufferedReader bufferedReader1 = new BufferedReader(new FileReader(puzzleInputFile));
+        int rows=0;
+        while(bufferedReader1.readLine()!=null) {
+            rows++;
+        }
+        bufferedReader1.close();
+        if(gridSize!=rows-2){
+            System.out.println("Grid is not of size n x n");
+            if(puzzleOutputFile!=null){
+                writeErrorOutputFile();
             }
-            bufferedReader1.close();
-            if(gridSize!=rows-2){
-                System.out.println("Grid is not of size n x n");
-                System.exit(1);
+            System.exit(1);
+        }
+
+        puzzleArray = new String[gridSize + 1][gridSize];
+        this.gridValues = new String[gridSize+1][gridSize];
+
+        for (int i = 0; i < gridSize+1; i++) {
+            String allValues = bufferedReader.readLine();
+            String temp[] = allValues.split(" ");
+
+            for (int k = 0; k < temp.length; k++) {
+                if (temp[k].equals("-")) {
+                    puzzleArray[i][k] = "0";
+                }else {
+                    puzzleArray[i][k] = temp[k];
+                }
             }
-
-            puzzleArray = new String[gridSize + 1][gridSize];
-            this.gridValues = new String[gridSize+1][gridSize];
-
-             for (int i = 0; i < gridSize+1; i++) {
-                 String allValues = bufferedReader.readLine();
-                 String temp[] = allValues.split(" ");
-
-                 for (int k = 0; k < temp.length; k++) {
-                     if (temp[k].equals("-")) {
-                         puzzleArray[i][k] = "0";
-                     }else {
-                         puzzleArray[i][k] = temp[k];
-                     }
-                 }
-             }
+        }
 
         gridSymbols=new String[gridSize];
         for(int x=0; x< puzzleArray[0].length; x++){
@@ -52,7 +65,6 @@ public class Solver {
             }
         }
     }
-
     public String[][] getGridValues(){
         return gridValues;
     }
@@ -257,4 +269,16 @@ public class Solver {
         bufferedWriter.close();
     }
 
+    public void writeErrorOutputFile() throws IOException {
+        BufferedReader read= new BufferedReader(new FileReader(puzzleInputFile));
+        BufferedWriter write= new BufferedWriter(new FileWriter(puzzleOutputFile));
+        String row= null;
+        while ((row=read.readLine())!=null){
+            write.write(row);
+            write.newLine();
+        }
+        write.newLine();
+        write.write("Invalid Format");
+        write.close();
+    }
 }

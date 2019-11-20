@@ -2,21 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74776e58-6940-4769-b103-1a8573de5eb5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Input/Puzzle-4x4-0001.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Input/Puzzle-4x4-0001.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/test/BackTrackingTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/BackTrackingTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/input.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/o.txt" beforeDir="false" afterPath="$PROJECT_DIR$/o.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Puzzle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Puzzle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BackTrackingTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Solver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Solver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BackTrackingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BackTrackingTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,21 +60,22 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/Sudoku-20191114T204250Z-001/Sudoku" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
       <recent name="" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Namita Raghuvanshi\IdeaProjects\Sudoku\src\test\java" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Namita Raghuvanshi\IdeaProjects\Sudoku\Input" />
+      <recent name="C:\Users\Namita Raghuvanshi\IdeaProjects\Sudoku" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Namita Raghuvanshi\IdeaProjects\Sudoku" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Namita Raghuvanshi\IdeaProjects\Sudoku\src\test\java" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -89,7 +90,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Puzzle">
+  <component name="RunManager" selected="Gradle.BackTrackingTest">
     <configuration name="Puzzle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Puzzle" />
       <module name="untitled.main" />
@@ -97,6 +98,26 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="BackTrackingTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;BackTrackingTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
     </configuration>
     <configuration name="BackTrackingTest.backTrackingTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -121,9 +142,11 @@
     <list>
       <item itemvalue="Application.Puzzle" />
       <item itemvalue="Gradle.BackTrackingTest.backTrackingTest" />
+      <item itemvalue="Gradle.BackTrackingTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.BackTrackingTest" />
         <item itemvalue="Gradle.BackTrackingTest.backTrackingTest" />
         <item itemvalue="Gradle.BackTrackingTest.backTrackingTest" />
         <item itemvalue="Gradle.BackTrackingTest.backTrackingTest" />
@@ -142,6 +165,7 @@
       <option name="presentableId" value="Default" />
       <updated>1573761202152</updated>
       <workItem from="1573761207408" duration="24696000" />
+      <workItem from="1574215507992" duration="2573000" />
     </task>
     <servers />
   </component>
@@ -153,7 +177,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
