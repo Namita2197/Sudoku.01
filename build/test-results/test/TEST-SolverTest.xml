@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SolverTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-11-20T22:42:34" hostname="Namita" time="0.005">
+  <properties/>
+  <testcase name="solverConstructorTest" classname="SolverTest" time="0.005"/>
+  <system-out><![CDATA[ 2 4 3 1
+ 1 3 2 4
+ 3 1 4 2
+ 4 2 1 3
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

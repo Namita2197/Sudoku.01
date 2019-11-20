@@ -72,6 +72,26 @@ public class Solver {
     public boolean validity(String[][] gridValues, int size){
         try {
             String puzzleGrid[][] = new String[size][size];
+            Boolean foundSymbol= false;
+            for (int i = 1; i < size + 1; i++) {
+                for (int j = 0; j < size; j++) {
+                    for(int k=0; k< gridSymbols.length; k++) {
+                        if (gridValues[i][j] == gridSymbols[k] || gridValues[i][j] == "-") {
+                            foundSymbol = false;
+                            break;
+                        } else {
+                            foundSymbol = true;
+                        }
+                    }
+                }
+            }
+            if(foundSymbol){
+                System.out.println("Sudoku consist invalid symbols");
+                if(puzzleOutputFile!=null){
+                    writeErrorOutputFile();
+                }
+                System.exit(1);
+            }
             for (int i = 1; i < size + 1; i++) {
                 for (int j = 0; j < size; j++) {
                     puzzleGrid[i - 1][j] = gridValues[i][j];

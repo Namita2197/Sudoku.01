@@ -9,14 +9,18 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Input/Puzzle-9x9-0101.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Input/Puzzle-9x9-0101.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-BackTrackingTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-HumanKindTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-OnePossibleTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/StrategyTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/StrategyTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/StrategyTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/StrategyTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-StrategyTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-StrategyTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SolverTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SolverTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/o.txt" beforeDir="false" afterPath="$PROJECT_DIR$/o.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Solver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Solver.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +64,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/Sudoku-20191114T204250Z-001/Sudoku" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
@@ -90,33 +94,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.StrategyTest">
+  <component name="RunManager" selected="Application.Puzzle">
+    <configuration name="Puzzle" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Puzzle" />
+      <module name="untitled.main" />
+      <option name="PROGRAM_PARAMETERS" value="input.txt o.txt" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SolverTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="--tests &quot;SolverTest&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="SolverTest.solverConstructorTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;SolverTest.solverConstructorTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -171,7 +163,7 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="Tests in 'untitled.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Tests in 'untitled.test'" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -192,19 +184,17 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Application.Puzzle" />
       <item itemvalue="Gradle.Tests in 'untitled.test'" />
       <item itemvalue="Gradle.SolverTest" />
-      <item itemvalue="Gradle.SolverTest.solverConstructorTest" />
       <item itemvalue="Gradle.StrategyTest" />
       <item itemvalue="Gradle.StrategyTest.testConstructor" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.SolverTest" />
         <item itemvalue="Gradle.StrategyTest" />
         <item itemvalue="Gradle.StrategyTest.testConstructor" />
-        <item itemvalue="Gradle.SolverTest" />
-        <item itemvalue="Gradle.SolverTest.solverConstructorTest" />
-        <item itemvalue="Gradle.Tests in 'untitled.test'" />
       </list>
     </recent_temporary>
   </component>
@@ -219,7 +209,8 @@
       <option name="presentableId" value="Default" />
       <updated>1573761202152</updated>
       <workItem from="1573761207408" duration="24696000" />
-      <workItem from="1574215507992" duration="5321000" />
+      <workItem from="1574215507992" duration="5387000" />
+      <workItem from="1574280546573" duration="5763000" />
     </task>
     <servers />
   </component>
