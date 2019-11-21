@@ -17,7 +17,7 @@ Solution:
 Total Time:   2639400   ns
 
 
-Strategy               Uses          Time   
+SolverTemplate               Uses          Time
 One Possible Solution  0      0  ns
-Human Kind Strategy    4      0  ns
+Human Kind SolverTemplate    4      0  ns
 BackTracking           0      40800  ns

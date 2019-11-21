@@ -1,4 +1,4 @@
-public class HumanKind extends Strategy{
+public class HumanKind extends SolverTemplate {
 
     private String sudokuGrid[][];
     private String[] validSymbols;

@@ -1,7 +1,6 @@
 import java.io.*;
-import java.sql.SQLOutput;
 
-public class Solver {
+public class Validator {
 
     private String[][] puzzleArray;
     private String[][] gridValues;
@@ -11,15 +10,15 @@ public class Solver {
     private File puzzleOutputFile;
 
 
-    public Solver(String puzzleInput, String resultFile) throws IOException {
+    public Validator(String puzzleInput, String resultFile) throws IOException {
         puzzleInputFile = new  File(puzzleInput);
         if(resultFile!=null){
             puzzleOutputFile= new File(resultFile);
         }
-        FileIO();
+        getSudokuContent();
     }
 
-    public void FileIO() throws IOException {
+    public void getSudokuContent() throws IOException {
         FileReader fileReader = new FileReader(puzzleInputFile);
         BufferedReader bufferedReader = new BufferedReader(fileReader);
         this.gridSize = Integer.valueOf(bufferedReader.readLine());

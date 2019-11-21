@@ -1,4 +1,4 @@
-public class OnePossible extends Strategy {
+public class OnePossible extends SolverTemplate {
 
     private String sudokuGrid[][];
     private String[] validSymbols;

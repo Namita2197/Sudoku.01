@@ -3,20 +3,18 @@ import org.junit.Test;
 import java.io.File;
 import java.io.IOException;
 
-import static org.junit.Assert.*;
-
-public class SolverTest {
+public class ValidatorTest {
     @Test
     public void solverConstructorTest() throws IOException {
-        Solver solver = new Solver("input\\Puzzle-4x4-0001.txt","output.txt");
-        String gridValues[][]=solver.getGridValues();
+        Validator validator = new Validator("input\\Puzzle-4x4-0001.txt","output.txt");
+        String gridValues[][]= validator.getGridValues();
         int backTrackingCount=0;
         int onePossibleCount=0;
         int humanKindCount=0;
         long totalTimeTaken1=0;
         long totalTimeTaken2=0;
         BackTracking backTracking=new BackTracking(gridValues);
-        assertTrue(solver.validity(gridValues, gridValues[0].length));
+        validator.validity(gridValues, gridValues[0].length);
         long startTime = System.nanoTime();
 
 
@@ -30,7 +28,7 @@ public class SolverTest {
         long endTime = System.nanoTime();
         long totalTimeTaken=endTime-startTime;
         File output = new File("output.txt");
-        solver.writeOutputFile(output,gridValues,onePossibleCount,humanKindCount,backTrackingCount,totalTimeTaken,totalTimeTaken1,totalTimeTaken2,totalTimeTaken3);
+        validator.writeOutputFile(output,gridValues,onePossibleCount,humanKindCount,backTrackingCount,totalTimeTaken,totalTimeTaken1,totalTimeTaken2,totalTimeTaken3);
 
     }
 

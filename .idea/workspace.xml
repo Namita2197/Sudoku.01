@@ -2,17 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74776e58-6940-4769-b103-1a8573de5eb5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/BackTracking.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/BackTracking.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/HumanKind.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/HumanKind.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/OnePossible.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/OnePossible.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Puzzle.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Puzzle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Solver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Strategy.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/input.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/o.txt" beforeDir="false" afterPath="$PROJECT_DIR$/o.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BackTracking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BackTracking.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HumanKind.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HumanKind.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/OnePossible.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/OnePossible.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Puzzle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Puzzle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Solver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Solver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Solver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Validator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Strategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SolverTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BackTrackingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BackTrackingTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/HumanKindTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HumanKindTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/OnePossibleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/OnePossibleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SolverTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ValidatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StrategyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SolverTemplateTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,9 +56,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Arquillian JUnit Test Class" />
         <option value="JUnit4 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -202,7 +220,7 @@
       <updated>1573761202152</updated>
       <workItem from="1573761207408" duration="24696000" />
       <workItem from="1574215507992" duration="5387000" />
-      <workItem from="1574280546573" duration="12185000" />
+      <workItem from="1574280546573" duration="14744000" />
     </task>
     <servers />
   </component>

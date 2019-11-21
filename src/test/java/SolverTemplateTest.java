@@ -4,11 +4,11 @@ import java.io.IOException;
 
 import static org.junit.Assert.*;
 
-public class StrategyTest {
+public class SolverTemplateTest {
     @Test
     public void testConstructor() throws IOException {
-        Solver solver = new Solver("input\\Puzzle-16x16-0201.txt","output.txt");
-        String board[][]=solver.getGridValues();
+        Validator validator = new Validator("input\\Puzzle-16x16-0201.txt","output.txt");
+        String board[][]= validator.getGridValues();
         BackTracking backTracking = new BackTracking(board);
         backTracking.getBoard();
         String board1[][]=backTracking.getBoard();

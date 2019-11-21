@@ -1,8 +1,23 @@
 4
-1 2 3 4
-2 - 3 1
-1 * - 4
-3 1 4 -
-- 2 1 3
+1 2 3 4 
+2 - 3 1 
+1 3 2 4 
+3 1 4 - 
+- 2 1 3 
 
-Invalid Symbol in the puzzle
+
+Solution:
+s
+2 4 3 1 
+1 3 2 4 
+3 1 4 2 
+4 2 1 3 
+
+
+Total Time:   3718900   ns
+
+
+Strategy               Uses          Time   
+One Possible Solution  1      48700  ns
+Human Kind Strategy    0      16000  ns
+BackTracking           2      10100  ns

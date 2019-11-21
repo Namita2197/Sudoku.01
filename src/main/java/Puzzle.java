@@ -12,13 +12,13 @@ public class Puzzle {
             if(args.length==2){
                 resultFile=args[1];
             }
-            Solver solver = new Solver(args[0],resultFile);
-            String puzzleArray[][] = solver.getGridValues();
-            String gridValues[][] = solver.getGridValues();
+            Validator validator = new Validator(args[0],resultFile);
+            String puzzleArray[][] = validator.getGridValues();
+            String gridValues[][] = validator.getGridValues();
             int humanKindCount=0;
             int onePossibleCount=0;
             int backTrackingCount=0;
-            solver.validity(gridValues,gridValues[0].length);
+            validator.validity(gridValues,gridValues[0].length);
 
                 long startTime = System.nanoTime();
 
@@ -51,7 +51,7 @@ public class Puzzle {
 
                 if (args.length == 2) {
                     File fileOutput = new File(args[1]);
-                    solver.writeOutputFile(fileOutput, gridValues, onePossibleCount, humanKindCount, backTrackingCount, totalTime, totalTimeTaken1, totalTimeTaken2, totalTimeTaken3);
+                    validator.writeOutputFile(fileOutput, gridValues, onePossibleCount, humanKindCount, backTrackingCount, totalTime, totalTimeTaken1, totalTimeTaken2, totalTimeTaken3);
                 } else {
                     System.out.println(String.valueOf(puzzleArray[0].length));
                     System.out.println();

@@ -1,4 +1,4 @@
-public class BackTracking extends Strategy{
+public class BackTracking extends SolverTemplate {
 
     private String sudokuGrid[][];
     String [] validSymbols;

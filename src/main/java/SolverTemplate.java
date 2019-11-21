@@ -1,4 +1,4 @@
-public abstract class Strategy {
+public abstract class SolverTemplate {
 
     private String sudokuGrid[][];
     private String[] validSymbols;
@@ -8,7 +8,7 @@ public abstract class Strategy {
     private int onePossibleCount;
 
 
-    public Strategy(String gridValues[][]){
+    public SolverTemplate(String gridValues[][]){
         this.sudokuGrid=new String[gridValues[0].length][gridValues[0].length];
         this.size=gridValues[0].length;
         this.validSymbols=new String[this.size];

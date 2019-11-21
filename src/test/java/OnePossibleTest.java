@@ -7,8 +7,8 @@ import static org.junit.Assert.*;
 public class OnePossibleTest {
     @Test
     public void onepossibleSolutionSolve() throws IOException {
-        Solver solver = new Solver("input\\Puzzle-9x9-0101.txt","output.txt");
-        String gridValues[][]=solver.getGridValues();
+        Validator validator = new Validator("input\\Puzzle-9x9-0101.txt","output.txt");
+        String gridValues[][]= validator.getGridValues();
         OnePossible onePossible= new OnePossible(gridValues);
         assertEquals(onePossible.getSize(),gridValues[0].length);
         onePossible.solve();
