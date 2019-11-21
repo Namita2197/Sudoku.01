@@ -32,4 +32,9 @@ public class ValidatorTest {
 
     }
 
+    @Test
+    public void testWriteErrorOutputFile() throws IOException {
+         Validator validator=new Validator("invalid.txt","invalidOutput.txt");
+    }
+
 }
