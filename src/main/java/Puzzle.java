@@ -18,11 +18,8 @@ public class Puzzle {
             int humanKindCount=0;
             int onePossibleCount=0;
             int backTrackingCount=0;
-            if(solver.validity(gridValues,gridValues[0].length)){
-                System.out.println("Puzzle is Valid ");
-            }else {
-                System.exit(1);
-            }
+            solver.validity(gridValues,gridValues[0].length);
+
                 long startTime = System.nanoTime();
 
                 OnePossible onePossible = new OnePossible(gridValues);

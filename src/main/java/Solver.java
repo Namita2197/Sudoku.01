@@ -33,15 +33,15 @@ public class Solver {
         if(gridSize!=rows-2){
             System.out.println("Grid is not of size n x n");
             if(puzzleOutputFile!=null){
-                writeErrorOutputFile();
+                writeErrorOutputFile("Grid is not of size n x n");
             }
             System.exit(1);
         }
 
-        puzzleArray = new String[gridSize + 1][gridSize];
+        this.puzzleArray = new String[gridSize + 1][gridSize];
         this.gridValues = new String[gridSize+1][gridSize];
 
-        for (int i = 0; i < gridSize+1; i++) {
+        for (int i = 0; i <=gridSize; i++) {
             String allValues = bufferedReader.readLine();
             String temp[] = allValues.split(" ");
 
@@ -69,54 +69,62 @@ public class Solver {
         return gridValues;
     }
 
-    public boolean validity(String[][] gridValues, int size){
+    public void validity(String[][] gridValues, int size) throws IOException {
         try {
-            String puzzleGrid[][] = new String[size][size];
+            String errorMessage=null;
+            String puzzleGrid[][] = new String[gridSize][gridSize];
             Boolean foundSymbol= false;
-            for (int i = 1; i < size + 1; i++) {
-                for (int j = 0; j < size; j++) {
+            int g,h;
+            for ( g = 1; g < gridSize + 1; g++) {
+                for ( h = 0; h < gridSize; h++) {
                     for(int k=0; k< gridSymbols.length; k++) {
-                        if (gridValues[i][j] == gridSymbols[k] || gridValues[i][j] == "-") {
+                        if (gridValues[g][h].equals(gridSymbols[k]) || gridValues[g][h] == "0") {
                             foundSymbol = false;
                             break;
                         } else {
                             foundSymbol = true;
+                            errorMessage="Invalid Symbol in the puzzle";
                         }
+                    }
+                    if(foundSymbol){
+                        g=gridSize+2;
+                        h=gridSize+2;
+                        break;
                     }
                 }
             }
-            if(foundSymbol){
-                System.out.println("Sudoku consist invalid symbols");
-                if(puzzleOutputFile!=null){
-                    writeErrorOutputFile();
-                }
-                System.exit(1);
-            }
-            for (int i = 1; i < size + 1; i++) {
-                for (int j = 0; j < size; j++) {
+
+            for (int i = 1; i < gridSize + 1; i++) {
+                for (int j = 0; j < gridSize; j++) {
                     puzzleGrid[i - 1][j] = gridValues[i][j];
                 }
             }
             if (puzzleGrid == null) {
-                System.out.println("Sudoku is null");
-                return false;
+                System.out.println("puzzle is null");
+                errorMessage="puzzle is null";
+                foundSymbol=true;
             }
-            for (int i = 1; i < size; i++) {
-                if (puzzleGrid[i].length != size) {
+            for (int i = 1; i < gridSize; i++) {
+                if (puzzleGrid[i].length != gridSize) {
                     System.out.println("Invalid Format");
-                    return false;
+                    errorMessage="puzzle is in Invalid Format";
+                    foundSymbol=true;
+                    break;
+
                 }
             }
-            for (int i = 1; i < size; i++) {
-                if (puzzleGrid.length != size) {
-                    System.out.println("Invalid Format");
-                    return false;
+            for (int i = 1; i < gridSize; i++) {
+                if (puzzleGrid.length != gridSize) {
+                    System.out.println("Puzzle size is not correct");
+                    errorMessage="puzzle size i snot correct";
+                    foundSymbol=true;
+                    break;
                 }
             }
 
-            for (int i = 0; i < size; i++) {
-                String[] colBoard = new String[size];
-                for (int j = 0; j < size; j++) {
+            for (int i = 0; i < gridSize; i++) {
+                String[] colBoard = new String[gridSize];
+                for (int j = 0; j < gridSize; j++) {
                     colBoard[j] = puzzleGrid[j][i];
                 }
                 int m = 0;
@@ -131,8 +139,11 @@ public class Solver {
                                 if (Integer.parseInt(colBoard[m]) == 0 && Integer.parseInt(colBoard[m]) == 0) {
 
                                 } else {
-                                    System.out.println("Invalid Format");
-                                    return false;
+                                    System.out.println("Puzzle has Invalid Column Count");
+                                    errorMessage="Puzzle has Invalid Column Count";
+                                    foundSymbol=true;
+                                    break;
+
                                 }
                             }
                         }
@@ -142,9 +153,9 @@ public class Solver {
                 }
             }
 
-            for (int i = 0; i < size; i++) {
-                String[] rowBoard = new String[size];
-                for (int j = 0; j < size; j++) {
+            for (int i = 0; i < gridSize; i++) {
+                String[] rowBoard = new String[gridSize];
+                for (int j = 0; j < gridSize; j++) {
                     rowBoard[j] = puzzleGrid[i][j];
                 }
                 int m = 0;
@@ -159,8 +170,10 @@ public class Solver {
                                 if (Integer.parseInt(rowBoard[m]) == 0 && Integer.parseInt(rowBoard[m]) == 0) {
 
                                 } else {
-                                    System.out.println("Invalid Format");
-                                    return false;
+                                    System.out.println("Puzzle has Invalid row Count");
+                                    errorMessage="Puzzle has Invalid Column Count";
+                                    foundSymbol=true;
+                                    break;
                                 }
                             }
                         }
@@ -170,9 +183,9 @@ public class Solver {
                 }
             }
 
-            for (int i = 0; i < size; i++) {
-                for (int j = 0; j < size; j++) {
-                    String[] subGrid = getSectionOfGrid(i, j, String.valueOf(puzzleGrid[i][j]), size, puzzleGrid);
+            for (int i = 0; i < gridSize; i++) {
+                for (int j = 0; j < gridSize; j++) {
+                    String[] subGrid = getSectionOfGrid(i, j, String.valueOf(puzzleGrid[i][j]), gridSize, puzzleGrid);
                     for (int p = 0; p < subGrid.length; p++) {
 
                     }
@@ -188,8 +201,10 @@ public class Solver {
                                     if (Integer.parseInt(subGrid[m]) == 0 && Integer.parseInt(subGrid[m]) == 0) {
 
                                     } else {
-                                        System.out.println("Invalid Format");
-                                        return false;
+                                        System.out.println("Subgrid has repeated symbols");
+                                        errorMessage="Subgrid has repeated symbols";
+                                        foundSymbol=true;
+                                        break;
                                     }
                                 }
                             }
@@ -199,14 +214,22 @@ public class Solver {
                     }
                 }
             }
+            if(foundSymbol){
+                System.out.println(errorMessage);
+                if(puzzleOutputFile!=null){
+                    writeErrorOutputFile(errorMessage);
+                }
+                System.exit(1);
+            }
         }catch(Exception ex){
             String fault =ex.toString();
             if(fault.equals("java.lang.NullPointerException")){
                 System.out.println("invalid puzzle -> Format is incorrect");
+                writeErrorOutputFile("Invalid:not formatted correctly");
                 System.exit(1);
             }
         }
-        return true;
+
     }
 
     public String[] getSectionOfGrid(int row, int column, String values, int size, String gridValues[][]){
@@ -289,7 +312,7 @@ public class Solver {
         bufferedWriter.close();
     }
 
-    public void writeErrorOutputFile() throws IOException {
+    public void writeErrorOutputFile(String errorMessage) throws IOException {
         BufferedReader read= new BufferedReader(new FileReader(puzzleInputFile));
         BufferedWriter write= new BufferedWriter(new FileWriter(puzzleOutputFile));
         String row= null;
@@ -298,7 +321,7 @@ public class Solver {
             write.newLine();
         }
         write.newLine();
-        write.write("Invalid Format");
+        write.write(errorMessage);
         write.close();
     }
 }
